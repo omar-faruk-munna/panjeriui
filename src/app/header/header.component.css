@@ -1,0 +1,17 @@
+.rounded-lg {
+    border-radius: 1rem!important;
+}
+
+.icon-color{
+    color: #FE0000;
+}
+
+.form-control{
+    width: 410px;
+}
+.border-color{
+    border-color: #FE0000;
+}
+.back-color{
+    background-color: #FE0000;
+}
