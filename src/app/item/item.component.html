@@ -1,18 +1,19 @@
 <hr class="hr-color" />
-<div class="row">
-  <div class="col-10">
-    <div class="row">
-      <div class="col-2">
-        <img
-          style="height: 135px; width: 90px"
-          src="../../assets/images/image-1.jpg"
-          alt=""
-        />
-      </div>
-      <div class="col-10">
-        <p class="mb-2">{{ card.name }}</p>
-        <p class="mb-4">{{ card.writterName }}</p>
 
+<!-- mobile version -->
+<div class="d-lg-none">
+  <div class="row">
+  <div class="col-sm-6 mb-3">
+    <div class="card" style="width: 12rem">
+      <img src="../../assets/images/image-1.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{card.name}}</h5>
+        <p class="card-text">
+          {{card.writterName}}
+        </p>
+        <p class="card-text">
+          TK. {{ card.price }}
+        </p>
         <div class="d-flex flex-row">
           <button
             (click)="itemMinus()"
@@ -44,8 +45,102 @@
       </div>
     </div>
   </div>
-  <div class="col-2 d-flex flex-row-reverse">
-    <p class="h6 align-self-center">TK. {{ card.price }}</p>
+  <div class="col-sm-6 mb-3">
+    <div class="card" style="width: 12rem">
+      <img src="../../assets/images/image-2.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{card.name}}</h5>
+        <p class="card-text">
+          {{card.writterName}}
+        </p>
+        <p class="card-text">
+          TK. {{ card.price }}
+        </p>
+        <div class="d-flex flex-row">
+          <button
+            (click)="itemMinus()"
+            type="button"
+            class="btn btn-sm btn-primary shadow-none"
+          >
+            <b>-</b>
+          </button>
+          <div
+            class="
+              hr-color
+              border
+              justify-content-center
+              align-self-center
+              text-light
+              btn btn-sm
+            "
+          >
+            <b>{{ totalItem }}</b>
+          </div>
+          <button
+            class="btn btn-sm btn-primary shadow-none"
+            (click)="itemAdd()"
+            type="button"
+          >
+            <b>+</b>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+</div>
+
+<!-- desktop version -->
+<div class="d-none d-lg-block">
+  <div class="row">
+    <div class="col-10">
+      <div class="row">
+        <div class="col-2">
+          <img
+            style="height: 135px; width: 90px"
+            src="../../assets/images/image-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="col-10">
+          <p class="mb-2">{{ card.name }}</p>
+          <p class="mb-4">{{ card.writterName }}</p>
+
+          <div class="d-flex flex-row">
+            <button
+              (click)="itemMinus()"
+              type="button"
+              class="btn btn-sm btn-primary shadow-none"
+            >
+              <b>-</b>
+            </button>
+            <div
+              class="
+                hr-color
+                border
+                justify-content-center
+                align-self-center
+                text-light
+                btn btn-sm
+              "
+            >
+              <b>{{ totalItem }}</b>
+            </div>
+            <button
+              class="btn btn-sm btn-primary shadow-none"
+              (click)="itemAdd()"
+              type="button"
+            >
+              <b>+</b>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-2 d-flex flex-row-reverse">
+      <p class="h6 align-self-center">TK. {{ card.price }}</p>
+    </div>
+  </div>
+</div>
+
 <hr class="hr-color" />

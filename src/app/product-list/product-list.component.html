@@ -17,8 +17,8 @@
               <td>{{ p.productId }}</td>
               <td>{{ p.productName }}</td>
               <td>{{ p.writterName }}</td>
-              <td>{{ p.price }}</td>
-              <td>{{ p.amount }}</td>
+              <td>{{ p.price | number: "1.2-2" }}</td>
+              <td>{{ p.amount | number: "1.2-2" }}</td>
             </tr>
           </tbody>
         </table>

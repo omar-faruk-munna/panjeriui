@@ -1,23 +1,24 @@
+.inner-addon {
+  position: relative;
+  width: 100%;
+}
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 7px 8px;
+  pointer-events: none;
+}
+.right-addon .glyphicon {
+  right: 0px;
+}
+.right-addon input {
+  padding-right: 30px;
+}
 .rounded-lg {
-    border-radius: 1rem!important;
+  border-radius: 1rem !important;
 }
-
-.icon-color{
-    color: #FE0000;
+.icon-color {
+  color: #fe0000;
 }
-
-.form-control{
-    width: 340px;
+.form-control {
+  width: 400px;
 }
-.border-color{
-    border-color: #FE0000;
-}
-.back-color{
-    background-color: #FE0000;
-}
-
-@media only screen and (max-width: 990px) {
-    .top-nav {
-      display: none;
-    }
-  }

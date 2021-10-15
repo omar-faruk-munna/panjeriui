@@ -1,7 +1,106 @@
-<nav class="navbar navbar-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
+<div class="container">
+  <!-- mobile version -->
+  <div class="d-lg-none">
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img src="../assets/images/mobile-logo.gif" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="border-color: orangered"
+      >
+        <i class="fas fa-bars" style="color: orangered"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-dark"
+              href="#"
+              id="navbarDropdown1"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              লেখক
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" [routerLink]="['/products']">Products</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-dark"
+              href="#"
+              id="navbarDropdown2"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              বিষয়
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-dark"
+              href="#"
+              id="navbarDropdown3"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              প্রকাশনী
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <div class="inner-addon right-addon">
+            <button
+              class="glyphicon glyphicon-user btn btn-sm rounded-pill"
+              style="background-color: orangered"
+            >
+              <i class="fas fa-search fa-lg text-white px-2"></i>
+            </button>
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              placeholder="type here to search"
+              style="width: 100%; border-color: orangered"
+            />
+          </div>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- desktop version -->
+  <div class="d-none d-lg-block">
+    <div class="row mt-2">
+      <div class="col-md-2">
         <a class="navbar-brand" [routerLink]="['/']">
           <img
             src="../assets/images/logo.gif"
@@ -12,36 +111,24 @@
           />
         </a>
       </div>
-      <div class="col-md-9 top-nav">
+      <div class="col-md-10">
         <div class="row">
-          <div class="col-6">
+          <div class="col-md-7">
             <ul class="nav justify-content-center">
               <div class="row">
                 <li class="nav-item">
-                  <!-- <div class="d-flex form-inputs">
-                    <input
-                      class="form-control"
-                      type="text"
-                      placeholder="Search any product..."
-                    />
-                    <i class="fas fa-search fa-lg"></i>
-                  </div> -->
                   <form class="form-inline">
                     <input
-                      class="
-                        form-control
-                        mr-sm-2
-                        rounded-pill
-                        border-color
-                        shadow-none
-                      "
+                      class="form-control mr-sm-2 rounded-pill shadow-none"
+                      style="border-color: orangered"
                       type="search"
                       placeholder="type here to search"
                       aria-label="Search"
                     />
                     <button
                       type="button "
-                      class="btn back-color rounded-pill ml-n5"
+                      class="btn rounded-pill ml-n5"
+                      style="background-color: orangered"
                     >
                       <i class="fas fa-search fa-lg px-1 text-light"></i>
                     </button>
@@ -111,7 +198,7 @@
               </div>
             </ul>
           </div>
-          <div class="col-6">
+          <div class="col-md-5">
             <ul class="nav justify-content-end">
               <li class="nav-item">
                 <a class="nav-link icon-color" href="#"
@@ -156,6 +243,5 @@
       </div>
     </div>
   </div>
-</nav>
-
+</div>
 <hr style="border-bottom: 2px solid #2487fc; margin: 0" />
