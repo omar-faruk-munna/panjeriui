@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-3">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" [routerLink]="['/']">
           <img
             src="../assets/images/logo.gif"
             width="150"
@@ -39,7 +39,10 @@
                       placeholder="type here to search"
                       aria-label="Search"
                     />
-                    <button type="button " class="btn back-color rounded-pill ml-n5">
+                    <button
+                      type="button "
+                      class="btn back-color rounded-pill ml-n5"
+                    >
                       <i class="fas fa-search fa-lg px-1 text-light"></i>
                     </button>
                   </form>
@@ -59,7 +62,9 @@
                     লেখক
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" [routerLink]="['/products']"
+                      >Products</a
+                    >
                     <a class="dropdown-item" href="#">Another action</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
